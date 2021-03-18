@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'animate';
+  
+  toState = "state1";
+
+  changeState(state:any)
+  {
+    this.toState = state;
+  }
 }
